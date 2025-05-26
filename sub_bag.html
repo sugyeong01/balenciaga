@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub_bag</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_bag.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script/common.js"></script>
+    <script src="./script/sub_bag.js"></script>
+    <script src="https://kit.fontawesome.com/a6551a6480.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="header_i">
+            <div class="header_t">
+                <div class="location_i">
+                    <div class="imgbox">
+                        <a href="#"><img src="./img/main/logo/Location on.png" alt="location_i"></a>
+                    </div>
+                </div>
+                <figure class="logo">
+                    <a href="#"><img src="./img/main/logo/logo 1.png" alt="logo_pc"></a>
+                </figure>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">CART (0)</a></li>
+                </ul>
+            </div>
+
+            <div class="header_b">
+                <ul>
+                    <li><a href="#">WOMAN</a></li>
+                    <li><a href="#">MAN</a></li>
+                    <li><a href="#">BAG</a></li>
+                    <li><a href="#">CAMPAIGN</a></li>
+                    <li><a href="#">A.B</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header2">
+            <div class="header_tablet">
+                <div class="ht_left">
+                    <div class="ham">
+                        <a href="#">
+                            <div class="ham_i">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imgbox">
+                        <a href="#"><img src="./img/main/logo/Location on.png" alt="location_i"></a>
+                    </div>
+                </div>
+                <figure class="logo">
+                    <a href="#"><img src="./img/main/logo/logo 1.png" alt="logo_pc"></a>
+                </figure>
+                <div class="text_b">
+                    <a href="#">CART(0)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+
+
+    <!--main-->
+    <section class="main">
+        <div class="main_i">
+            <figure>
+                <img src="./img/sub_bag/main_bg/main_bg_item1.jpg" alt="main_bg_item1">
+            </figure>
+            <figure class="main_bg_item2">
+                <img src="./img/sub_bag/main_bg/main_bg_item2.jpg" alt="main_bg_item2">
+            </figure>
+            <div class="main_t">
+                <h2>
+                    SS / <br>
+                    SUMMER <br>
+                    SEASON
+                </h2>
+                <h2>
+                    / 2025 <br>
+                    BAG <br>
+                    COLLECTIONS
+                </h2>
+            </div>
+            <button>
+                Shop All →
+            </button>
+        </div>
+    </section>
+    <!--//main-->
+
+    <!--items-->
+    <section class="items">
+        <div class="items_i">
+            <div class="items_t">
+                <div class="item_timeline">
+                    <p><span>BAG</span></p>
+                    <p><span>|</span></p>
+                    <p>All</p>
+                </div>
+                <h2>READY TO CARRY</h2>
+            </div>
+            <div class="menu-wrapper" id="menu_h">
+                <ul class="menu-slider">
+                  <li class="menu-item">All</li>
+                  <li class="menu-item">로데오</li>
+                  <li class="menu-item">벨에어</li>
+                  <li class="menu-item">캐리</li>
+                  <li class="menu-item">르카골</li>
+                  <li class="menu-item">SALE</li>
+                </ul>
+              </div>
+
+            <div class="filter">
+                   
+                <!-- <div class="menu-wrapper">
+                    <ul class="menu-slider">
+                      <li class="menu-item">All</li>
+                      <li class="menu-item">로데오</li>
+                      <li class="menu-item">벨에어</li>
+                      <li class="menu-item">캐리</li>
+                      <li class="menu-item">르카골</li>
+                      <li class="menu-item">SALE</li>
+                    </ul>
+                  </div> -->
+
+                  <div class="filter_btn_box">
+                  <div class="filter_i" id="filter_btn">
+                    Filter
+                    <figure>
+                        <img src="./img/sub_bag/Filter_list.png" alt="Filterlist">
+                    </figure>
+                </div>
+                    <div class="filter_i">
+                        정렬기준
+                        <figure>
+                            <img src="./img/sub_bag/Sort_Down.png" alt="Sort_Down">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter_tab">
+                <ul class="filter_tab_i">
+                    <li class="tab_header"><span>성별</span>
+                        <ul class="gender">
+                            <li>
+                                <label>
+                                    <input type="radio" name="gender" value="woman"> 여성
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="gender" value="man"> 남성
+                                  </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tab_header"><span>MATERIAL</span>
+                        <ul class="material">
+                            <li>
+                                <label>
+                                    <input type="radio" name="material" value="smooth"> 스무스 가죽
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="material" value="embossing"> 엠보싱 가죽
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="material" value="textured"> 텍스쳐드 가죽
+                                  </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tab_header"><span>COLOR</span>
+                        <ul class="color">
+                            <li>
+                                <label>
+                                    <input type="radio" name="color" value="black"> 검은색
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="color" value="white"> 흰색
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="color" value="red"> 빨간색
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="color" value="pink"> 분홍색
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="color" value="silver"> 은색
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="color" value="brown"> 갈색
+                                  </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="color" value="mixed"> 여러색
+                                  </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+        <div class="items_box">
+            <div class="item_top">
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item1.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt1.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item1">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                    <p>Tape Type Oversize Jacket</p>
+                    <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item2.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt2.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item2">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item3.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt3.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item3">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item4.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt4.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item4">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item5.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt5.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item5">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item6.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt6.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item6">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item7">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item7.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt7.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item7">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item8">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item8.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt8.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item8">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+            </div>
+
+            <div class="sub_collection">
+                <figure>
+                    <picture>
+                        <source srcset="./img/sub_bag/items/sub_coll_bg.jpg" media="(min-width: 1200px)">
+                        <source srcset="./img/sub_bag/items/sub_coll_bg_t.jpg" media="(min-width: 767px)">
+                        <source srcset="./img/sub_bag/items/sub_coll_bg_m.jpg" media="(min-width: 1px)">
+                        <img src="./" alt="sub_coll_bg">
+                    </picture>
+                </figure>
+                
+            </div>
+
+            <div class="item_btm">
+                <div class="item item9">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item9.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt9.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item9">
+                        </picture>
+                    </figure>
+                    <div class="black_bg">
+                        <h4>Luxury Line →</h4>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item10.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt10.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item10">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item11">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item11.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt11.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item11">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item12.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt12.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item12">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item13.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt13.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item13">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5></div>
+                <div class="item item_none">
+
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item14.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt14.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item7">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item_none">
+
+                </div>
+                <div class="item item9">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item9_2.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt9_2.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item9">
+                        </picture>
+                    </figure>
+                    <div class="black_bg">
+                        <h4>Wardrobe Staples →</h4>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item10.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt10.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item10">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item11">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/main_item.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/main_itemt.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item11">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item12.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt12.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item12">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item13.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt13.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item13">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item_none">
+
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item14.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt14.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item7">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item_none">
+
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item1.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt1.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item1">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                    <p>Tape Type Oversize Jacket</p>
+                    <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item2.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt2.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item2">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item3.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt3.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item3">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item4.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt4.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item4">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item5.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt5.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item5">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item6.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt6.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item6">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item7">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/item7.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/itemt7.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item7">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+                <div class="item item8">
+                    <figure>
+                        <picture>
+                            <source srcset="./img/sub_bag/items/main_item2.jpg" media="(min-width: 1200px)">
+                            <source srcset="./img/sub_bag/items/main_itemt2.jpg" media="(min-width: 1px)">
+                            <img src="./" alt="item8">
+                        </picture>
+                    </figure>
+                    <div class="item_tt">
+                        <p>Tape Type Oversize Jacket</p>
+                        <img src="./img/sub_bag/Bookmark_border.png" alt="Bookmark">
+                    </div>
+                    <h5>₩99,390,000</h5>
+                </div>
+
+        </div>
+        </div>
+
+        <button id="viewMore">
+            View More
+            <img src="./img/sub_bag/items/Arrow downward.png" alt="Arrow downward">
+        </button>
+
+    </section>
+    <!--//items-->
+
+
+    <!--footer-->
+    <footer>
+        <div class="footer_i">
+            <div class="footer_nav">
+                <ul class="fmenu_t">
+                    <li><span class="li_t">고객서비스</span>
+                        <ul>
+                            <li><a href="#">주문추적</a></li>
+                            <li><a href="#">교환 및 반품</a></li>
+                            <li><a href="#">배송</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="li_t">회사소개</span>
+                        <ul>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">쿠키설정</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="li_t">부티크</span>
+                        <ul>
+                            <li><a href="#">가까운 부티크 찾기</a></li>
+                            <li><a href="#">국가/지역:대한민국</a></li>
+                            <li><a href="#">언어:한국어</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="li_t">문의하기</span>
+                        <ul>
+                            <li><a href="#">월~토 (10:00~16:00)</a></li>
+                            <li><a href="#">전화 +82 261 05 21 88</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="li_t">소셜미디어</span>
+                        <ul>
+                            <li><a href="#">Kakaotalk</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Tiktok</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Spotify</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="fmenu_m">
+                    <li class="menu_item">
+                        <div class="menu_header">
+                            고객서비스
+                            <div class="arrowdown">
+                                <img src="./img/main/arrowdown.png" alt="arrowdown">
+                            </div>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="#">주문추적</a></li>
+                            <li><a href="#">교환 및 반품</a></li>
+                            <li><a href="#">배송</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <div class="menu_header">
+                            회사소개
+                            <div class="arrowdown">
+                                <img src="./img/main/arrowdown.png" alt="arrowdown">
+                            </div>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">쿠키설정</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <div class="menu_header">
+                            부티크
+                            <div class="arrowdown">
+                                <img src="./img/main/arrowdown.png" alt="arrowdown">
+                            </div>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="#">가까운 부티크 찾기</a></li>
+                            <li><a href="#">국가/지역: 대한민국</a></li>
+                            <li><a href="#">언어: 한국어</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <div class="menu_header">
+                            문의하기
+                            <div class="arrowdown">
+                                <img src="./img/main/arrowdown.png" alt="arrowdown">
+                            </div>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="#">월~토 (10:00~16:00)</a></li>
+                            <li><a href="#">전화 +82 261 05 21 88</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <div class="menu_header">
+                            소셜미디어
+                            <div class="arrowdown">
+                                <img src="./img/main/arrowdown.png" alt="arrowdown">
+                            </div>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="#">Kakaotalk</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Tiktok</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Spotify</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="company_info">
+                <div class="ci_t">
+                    <p>대표자: 소피쿠스토리 | 주소: 서울특별시 강남구 도산대로 458, 13,14층(청담동, 도산 458빌딩)</p>
+                    <p>고객센터: 02-6105-2188 </p>
+                    <p>이메일: clientservice.kr@balenciaga.com</p>
+                    <p>개인정보보호책임 : 발렌시아가코리아 유한책임회사 이커머스팀</p>
+                </div>
+                <div class="newsletter">
+                    <h5>
+                        발렌시아가 뉴스레터를 구독하세요!
+                    </h5>
+                    <div class="newsletter_box">
+                        <input type="text" placeholder="이메일 입력">
+                        <button type="button">신청</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blca_logo_t">
+            <img src="./BALENCIAGA_ft.png" alt="BALENCIAGA_ft">
+        </div>
+        <p class="ft_bt">&copy; 2025 Balenciaga</p>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>

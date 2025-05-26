@@ -1,0 +1,84 @@
+/* 영문,한글 */
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-Regular.ttf) format('true type');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-Bold.ttf) format('true type');
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-SemiBold.ttf) format('true type');
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-Medium.ttf) format('true type');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+/* flex */
+@font-face {
+  font-family: 'Roboto-Flex';
+  src: url(https://github.com/mezhgano/roboto-flex-static/blob/main/ttf/RobotoFlex-Regular.ttf) format('true type');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto-Flex';
+  src: url(https://github.com/mezhgano/roboto-flex-static/blob/main/ttf/RobotoFlex-Medium.ttf) format('true type');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto-Flex';
+  src: url(https://github.com/mezhgano/roboto-flex-static/blob/main/ttf/RobotoFlex-SemiBold.ttf) format('true type');
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto-Flex';
+  src: url(https://github.com/mezhgano/roboto-flex-static/blob/main/ttf/RobotoFlex-Bold.ttf) format('true type');
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto-Flex';
+  src: url(https://github.com/mezhgano/roboto-flex-static/blob/main/ttf/RobotoFlex-ExtraBold.ttf) format('true type');
+  font-weight: 800;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'Roboto-Flex';
+  src: url(https://github.com/mezhgano/roboto-flex-static/blob/main/ttf/RobotoFlex-ExtraBold.ttf) format('true type');
+  font-weight: 1000;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+/* condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body{
+  font-size: 1rem;
+  font-family: 'roboto', 'Roboto-Flex';
+  font-family: "Roboto Condensed", sans-serif;
+}
