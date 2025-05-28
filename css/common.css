@@ -73,8 +73,6 @@ header .header_i .header_b {
   height: 28px;
 }
 
-
-
 .header2 {
   display: none;
   width: 100%;
@@ -140,31 +138,33 @@ header .header_tablet {
   font-size: 1.25rem;
 }
 
-/* //header */
-
 /* nav */
 .header_b ul {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 80px;
   margin: auto;
   font-size: 18px;
   font-weight: 600;
 }
+
 .navbox{
     position: absolute;     
-    top: -100%;             
+    top: 100px;            
     left: 0;
     width: 100%;
-    background: white;
+    background: magenta;
     z-index: 10;  
-    padding: 30px 0; 
+    /* padding: 30px 0;  */
+    height: auto;
   }
 .navbox .menu{
   width: 800px;
   height: 100%;
   margin: auto;
   display: none;
+  padding: 30px 0;
 }
 .navbox span{
   color: #1c1c1c;
@@ -219,6 +219,7 @@ header .header_tablet {
   padding: 50px 0;
 }
 /* //nav */
+/* //header */
 
 /* 
   //nav

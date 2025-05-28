@@ -1,21 +1,37 @@
 $(function () {
 
+  // $(".header_b li, .navbox").on({
+  //   mouseenter: function () {
+  //     $(".navbox").stop(true, true).animate({
+  //       top: "116px"
+  //     }, 500);
+  //     console.log("enter")
+  //   },
+  //   mouseleave: function () {
+  //     $(".navbox").stop(true, true).animate({
+  //       top: "-100%"
+  //     }, 500);
+  //   },
+  // });
   $(".header_b li, .navbox").on({
-    mouseenter: function () {
+    mouseover: function () {
       $(".navbox").stop(true, true).animate({
-        top: "116px"
+        opacity: "1"
       }, 500);
+      console.log("enter")
     },
     mouseleave: function () {
       $(".navbox").stop(true, true).animate({
-        top: "-100%"
+        opacity: "0"
       }, 500);
+      console.log('leave')
     },
   });
   // 각 메뉴별 display
   $(".header_b li:first-child, .nav_woman").on({
     mouseenter: function(){
       $(".nav_woman").css("display", "block")
+      console.log('woman')
     },
     mouseleave: function(){
       $(".nav_woman").css("display", "none")
@@ -24,6 +40,7 @@ $(function () {
   $(".header_b li:nth-child(2), .nav_man").on({
     mouseenter: function(){
       $(".nav_man").css("display", "block")
+      console.log('man')
     },
     mouseleave: function(){
       $(".nav_man").css("display", "none")
