@@ -272,8 +272,55 @@ nav .nav_bag .menu_i_left li,
   gap: 16px;
   font-size: 1rem;
 }
-.hidemenu_b li{
-  text-decoration: underline;
+
+/* li_link(underline) */
+.link {
+  position: relative;
+  display: inline-block;
+  color: var(--color-primary2);
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-primary2);
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 0.4s ease-out;
+}
+
+.link:hover::after {
+  animation: hideLine 0.4s ease-out forwards, showLine 0.4s 0.4s ease-out forwards;
+}
+
+@keyframes hideLine {
+  from {
+      transform-origin: right;
+      transform: scaleX(1);
+  }
+
+  to {
+      transform-origin: right;
+      transform: scaleX(0);
+  }
+}
+
+@keyframes showLine {
+  from {
+      transform-origin: left;
+      transform: scaleX(0);
+  }
+
+  to {
+      transform-origin: left;
+      transform: scaleX(1);
+  }
 }
 /* hidemenu */
 
