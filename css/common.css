@@ -15,7 +15,7 @@ header {
   z-index: 99;
   display: flex;
   align-items: center;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 header .header_i {
@@ -218,7 +218,64 @@ nav .nav_bag .menu_i_left li,
 
 /* //nav */
 
-
+/* hidemenu */
+.hidemenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8a8;
+  display: none;
+}
+.hidemenu_i{
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+.xmark{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-primary2);
+  color: #fff;
+  margin-left: auto;
+  margin-bottom: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.xmark i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidemenu_t{
+  margin-bottom: 80px;
+}
+.hidemenu_t ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.25rem;
+}
+.hidemenu_b{
+  margin-bottom: 80px;
+}
+.hidemenu_b ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1rem;
+}
+.hidemenu_b li{
+  text-decoration: underline;
+}
+/* hidemenu */
 
 /* footer */
 footer {
@@ -471,7 +528,13 @@ footer .footer_nav .fmenu_t li ul {
 }
 
 @media screen and (max-width: 767px) {
-
+  .hidemenu_i{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -495,5 +558,13 @@ footer .footer_nav .fmenu_t li ul {
   }
   .header_tablet .text_b {
     font-size: 16px;
+  }
+}
+@media (orientation: landscape) {
+  .hidemenu{
+    overflow-y: auto;
+  }
+  .hidemenu_i{
+    overflow-y: auto;
   }
 }

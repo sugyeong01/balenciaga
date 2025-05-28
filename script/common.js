@@ -1,9 +1,10 @@
 $(function () {
-   $(".header_b li, nav").on({
+  //nav
+   $(".header_b, nav").on({
      mouseenter: function(){
        $("nav").stop().animate({
          top: "116px"
-       }, 500, "swing");
+       }, 500, "linear");
      },
      mouseleave: function(){
        $("nav").stop().animate({
@@ -54,6 +55,23 @@ $(function () {
     },
   });
 
+  // hidemenu- (max-width: 1200px)
+  $(".ham").on("click", function(){
+    $(".hidemenu").css("display", "block");
+    $("body").css({
+        height: "100vh",
+        overflow: "hidden"
+    });
+})
+  $(".xmark").on("click", function(){
+    $(".hidemenu").css("display", "none");
+    $("body").css({
+        height: "auto",
+        overflow: "auto"
+    });
+});
+
+// footer
   $('.menu_header').on('click', function () {
     const $item = $(this).closest('.menu_item');
     const $submenu = $item.find('.submenu');
