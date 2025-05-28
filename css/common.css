@@ -73,14 +73,7 @@ header .header_i .header_b {
   height: 28px;
 }
 
-.header_b ul {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  margin: auto;
-  font-size: 18px;
-  font-weight: 600;
-}
+
 
 .header2 {
   display: none;
@@ -150,7 +143,15 @@ header .header_tablet {
 /* //header */
 
 /* nav */
-nav{
+.header_b ul {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbox{
     position: absolute;     
     top: -100%;             
     left: 0;
@@ -159,15 +160,13 @@ nav{
     z-index: 10;  
     padding: 30px 0; 
   }
-nav .menu{
-  display: none;
-}
-nav .menu{
+.navbox .menu{
   width: 800px;
   height: 100%;
   margin: auto;
+  display: none;
 }
-nav span{
+.navbox span{
   color: #1c1c1c;
   font-size: 1rem;
   font-weight: 500;
@@ -175,49 +174,122 @@ nav span{
 .nav_header ul{
   margin-top: 24px;
 }
-nav li{
+.navbox li{
   color: #2e2e2e;
   font-size: 0.875rem;
   margin-bottom: 16px;
 }
-nav li:last-child{
+.navbox li:last-child{
   margin-bottom: 0;
 }
-nav .menu_i{
+.navbox .menu_i{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-nav .nav_bagi{
+.navbox .nav_bagi{
   width: 800px;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
-nav .nav_bagi img{
+.navbox .nav_bagi img{
   max-width: 250px;
 }
 .bag_cp h4{
   margin-bottom: 8px;
   text-align: center;
 }
-nav .nav_bag .menu_i_left{
+.navbox .nav_bag .menu_i_left{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
-nav .nav_bag .menu_i_left li,
+.navbox .nav_bag .menu_i_left li,
 .nav_ab ul li{
   color: #1c1c1c;
   font-size: 1rem;
   font-weight: 500;
 }
-
+.nav_campaign,
+.nav_ab{
+  padding: 50px 0;
+}
 /* //nav */
 
+/* 
+  //nav
+   $("header_b li, .navbox").on({
+     mouseover: function(){
+       $(".navbox").stop().animate({
+         top: "116px"
+       }, 500, "linear");
+     },
+     mouseout: function(){
+       $(".navbox").stop().animate({
+         top: "-100%"
+       }, 500, "linear");
+     },
+   });
+
+
+  $(".header_b li:first-child, .nav_woman").on({
+    mouseover: function(){
+      $(".nav_woman").css("display", "block")
+    },
+    mouseout: function(){
+      $(".nav_woman").css("display", "none")
+    },
+  });
+  $(".header_b li:nth-child(2), .nav_man").on({
+    mouseover: function(){
+      $(".nav_man").css("display", "block")
+    },
+    mouseout: function(){
+      $(".nav_man").css("display", "none")
+    },
+  });
+  $(".header_b li:nth-child(3), .nav_bag").on({
+    mouseover: function(){
+      $(".nav_bag").css("display", "block")
+    },
+    mouseout: function(){
+      $(".nav_bag").css("display", "none")
+    },
+  });
+  $(".header_b li:nth-child(4), .nav_campaign").on({
+    mouseover: function(){
+      $(".nav_campaign").css("display", "block")
+    },
+    mouseout: function(){
+      $(".nav_campaign").css("display", "none")
+    },
+  });
+  $(".header_b li:last-child, .nav_ab").on({
+    mouseover: function(){
+      $(".nav_ab").css("display", "block")
+    },
+    mouseout: function(){
+      $(".nav_ab").css("display", "none")
+    },
+  });
+
+  $(".header_b li, .navbox").on({
+    mouseenter: function () {
+      $(".navbox").stop(true, true).animate({
+        top: "116px"
+      }, 300);
+    },
+    mouseleave: function () {
+      $(".navbox").stop(true, true).animate({
+        top: "-100%"
+      }, 300);
+    },
+  });
+*/
 /* hidemenu */
 .hidemenu{
   position: fixed;

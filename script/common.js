@@ -1,56 +1,55 @@
 $(function () {
-  //nav
-   $(".header_b, nav").on({
-     mouseenter: function(){
-       $("nav").stop().animate({
-         top: "116px"
-       }, 500, "linear");
-     },
-     mouseleave: function(){
-       $("nav").stop().animate({
-         top: "-100%"
-       }, 500, "linear");
-     },
-   });
 
-
+  $(".header_b li, .navbox").on({
+    mouseenter: function () {
+      $(".navbox").stop(true, true).animate({
+        top: "116px"
+      }, 500);
+    },
+    mouseleave: function () {
+      $(".navbox").stop(true, true).animate({
+        top: "-100%"
+      }, 500);
+    },
+  });
+  // 각 메뉴별 display
   $(".header_b li:first-child, .nav_woman").on({
-    mouseover: function(){
+    mouseenter: function(){
       $(".nav_woman").css("display", "block")
     },
-    mouseout: function(){
+    mouseleave: function(){
       $(".nav_woman").css("display", "none")
     },
   });
   $(".header_b li:nth-child(2), .nav_man").on({
-    mouseover: function(){
+    mouseenter: function(){
       $(".nav_man").css("display", "block")
     },
-    mouseout: function(){
+    mouseleave: function(){
       $(".nav_man").css("display", "none")
     },
   });
   $(".header_b li:nth-child(3), .nav_bag").on({
-    mouseover: function(){
+    mouseenter: function(){
       $(".nav_bag").css("display", "block")
     },
-    mouseout: function(){
+    mouseleave: function(){
       $(".nav_bag").css("display", "none")
     },
   });
   $(".header_b li:nth-child(4), .nav_campaign").on({
-    mouseover: function(){
+    mouseenter: function(){
       $(".nav_campaign").css("display", "block")
     },
-    mouseout: function(){
+    mouseleave: function(){
       $(".nav_campaign").css("display", "none")
     },
   });
   $(".header_b li:last-child, .nav_ab").on({
-    mouseover: function(){
+    mouseenter: function(){
       $(".nav_ab").css("display", "block")
     },
-    mouseout: function(){
+    mouseleave: function(){
       $(".nav_ab").css("display", "none")
     },
   });
