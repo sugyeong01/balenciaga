@@ -151,10 +151,10 @@ header .header_tablet {
 
 .navbox{
     position: absolute;     
-    top: 100px;            
+    top: 116px;            
     left: 0;
     width: 100%;
-    background: magenta;
+    background: white;
     z-index: 10;  
     /* padding: 30px 0;  */
     height: auto;
@@ -221,76 +221,6 @@ header .header_tablet {
 /* //nav */
 /* //header */
 
-/* 
-  //nav
-   $("header_b li, .navbox").on({
-     mouseover: function(){
-       $(".navbox").stop().animate({
-         top: "116px"
-       }, 500, "linear");
-     },
-     mouseout: function(){
-       $(".navbox").stop().animate({
-         top: "-100%"
-       }, 500, "linear");
-     },
-   });
-
-
-  $(".header_b li:first-child, .nav_woman").on({
-    mouseover: function(){
-      $(".nav_woman").css("display", "block")
-    },
-    mouseout: function(){
-      $(".nav_woman").css("display", "none")
-    },
-  });
-  $(".header_b li:nth-child(2), .nav_man").on({
-    mouseover: function(){
-      $(".nav_man").css("display", "block")
-    },
-    mouseout: function(){
-      $(".nav_man").css("display", "none")
-    },
-  });
-  $(".header_b li:nth-child(3), .nav_bag").on({
-    mouseover: function(){
-      $(".nav_bag").css("display", "block")
-    },
-    mouseout: function(){
-      $(".nav_bag").css("display", "none")
-    },
-  });
-  $(".header_b li:nth-child(4), .nav_campaign").on({
-    mouseover: function(){
-      $(".nav_campaign").css("display", "block")
-    },
-    mouseout: function(){
-      $(".nav_campaign").css("display", "none")
-    },
-  });
-  $(".header_b li:last-child, .nav_ab").on({
-    mouseover: function(){
-      $(".nav_ab").css("display", "block")
-    },
-    mouseout: function(){
-      $(".nav_ab").css("display", "none")
-    },
-  });
-
-  $(".header_b li, .navbox").on({
-    mouseenter: function () {
-      $(".navbox").stop(true, true).animate({
-        top: "116px"
-      }, 300);
-    },
-    mouseleave: function () {
-      $(".navbox").stop(true, true).animate({
-        top: "-100%"
-      }, 300);
-    },
-  });
-*/
 /* hidemenu */
 .hidemenu{
   position: fixed;
@@ -337,6 +267,7 @@ header .header_tablet {
   font-size: 1.25rem;
 }
 .hidemenu_b{
+  font-family: 'Roboto';
   margin-bottom: 80px;
 }
 .hidemenu_b ul{

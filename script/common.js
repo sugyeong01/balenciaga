@@ -13,62 +13,60 @@ $(function () {
   //     }, 500);
   //   },
   // });
-  $(".header_b li, .navbox").on({
-    mouseover: function () {
-      $(".navbox").stop(true, true).animate({
-        opacity: "1"
-      }, 500);
-      console.log("enter")
-    },
-    mouseleave: function () {
-      $(".navbox").stop(true, true).animate({
-        opacity: "0"
-      }, 500);
-      console.log('leave')
-    },
-  });
+  // $(".header_b li, .navbox").on({
+  //   mouseover: function () {
+  //     $(".navbox").stop(true, true).animate({
+  //       opacity: "1"
+  //     }, 500);
+  //     console.log("enter")
+  //   },
+  //   mouseleave: function () {
+  //     $(".navbox").stop(true, true).animate({
+  //       opacity: "0"
+  //     }, 500);
+  //     console.log('leave')
+  //   },
+  // });
   // 각 메뉴별 display
   $(".header_b li:first-child, .nav_woman").on({
     mouseenter: function(){
-      $(".nav_woman").css("display", "block")
-      console.log('woman')
+      $(".nav_woman").stop(true).slideDown();
     },
     mouseleave: function(){
-      $(".nav_woman").css("display", "none")
-    },
+      $(".nav_woman").stop(true).slideUp();
+    }
   });
   $(".header_b li:nth-child(2), .nav_man").on({
     mouseenter: function(){
-      $(".nav_man").css("display", "block")
-      console.log('man')
+      $(".nav_man").stop(true).slideDown();
     },
     mouseleave: function(){
-      $(".nav_man").css("display", "none")
-    },
+      $(".nav_man").stop(true).slideUp();
+    }
   });
   $(".header_b li:nth-child(3), .nav_bag").on({
     mouseenter: function(){
-      $(".nav_bag").css("display", "block")
+      $(".nav_bag").stop(true).slideDown();
     },
     mouseleave: function(){
-      $(".nav_bag").css("display", "none")
-    },
+      $(".nav_bag").stop(true).slideUp();
+    }
   });
   $(".header_b li:nth-child(4), .nav_campaign").on({
     mouseenter: function(){
-      $(".nav_campaign").css("display", "block")
+      $(".nav_campaign").stop(true).slideDown();
     },
     mouseleave: function(){
-      $(".nav_campaign").css("display", "none")
-    },
+      $(".nav_campaign").stop(true).slideUp();
+    }
   });
   $(".header_b li:last-child, .nav_ab").on({
     mouseenter: function(){
-      $(".nav_ab").css("display", "block")
+      $(".nav_ab").stop(true).slideDown();
     },
     mouseleave: function(){
-      $(".nav_ab").css("display", "none")
-    },
+      $(".nav_ab").stop(true).slideUp();
+    }
   });
 
   // hidemenu- (max-width: 1200px)
