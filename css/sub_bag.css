@@ -52,15 +52,25 @@
     transform: translate(-50%);
     margin: auto;
     background-color: transparent;
+    background: linear-gradient(to right, var(--color-primary1) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.4s ease;
     color: var(--color-primary1);
     border: 2px solid var(--color-primary1);
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 6px 12px;
     margin: auto;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 600;
     text-shadow: 0 0 8px rgb(122, 121, 121);
     box-shadow: 0 0 8px rgb(182, 182, 182);
+}
+.main button:hover{
+    background-position: left;
+    color: var(--color-primary2);
+    text-shadow: none;
+    box-shadow: none;
 }
 
 /* //main */
