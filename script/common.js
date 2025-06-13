@@ -1,32 +1,5 @@
 $(function () {
 
-  // $(".header_b li, .navbox").on({
-  //   mouseenter: function () {
-  //     $(".navbox").stop(true, true).animate({
-  //       top: "116px"
-  //     }, 500);
-  //     console.log("enter")
-  //   },
-  //   mouseleave: function () {
-  //     $(".navbox").stop(true, true).animate({
-  //       top: "-100%"
-  //     }, 500);
-  //   },
-  // });
-  // $(".header_b li, .navbox").on({
-  //   mouseover: function () {
-  //     $(".navbox").stop(true, true).animate({
-  //       opacity: "1"
-  //     }, 500);
-  //     console.log("enter")
-  //   },
-  //   mouseleave: function () {
-  //     $(".navbox").stop(true, true).animate({
-  //       opacity: "0"
-  //     }, 500);
-  //     console.log('leave')
-  //   },
-  // });
   // 각 메뉴별 display
   $(".header_b li:first-child, .nav_woman").on({
     mouseenter: function(){
